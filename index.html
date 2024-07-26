@@ -13,16 +13,26 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script>
+      function copyEmailToClipboard() {
+        const email = "timdiscovers@gmail.com";
+        navigator.clipboard
+          .writeText(email)
+          .then(() => {
+            alert("Email copied to clipboard!");
+          })
+          .catch((err) => {
+            console.error("Failed to copy email: ", err);
+          });
+      }
+    </script>
   </head>
   <body class="is-preload">
     <!-- Header -->
     <section id="header">
       <header>
         <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-        <h1 id="logo"><a href="#">Timothy Macfarlane</a></h1>
-        <a href="mailto:timdiscovers@gmail.com"
-          ><i>timdiscovers@gmail.com</i></a
-        >
+        <h1 id="logo">Timothy Macfarlane</h1>
         <p>
           I learn fast, love to study, type in COLEMAK, and value efficiency and
           effectiveness.
@@ -56,9 +66,8 @@
           </li>
           <li>
             <a
-              href="mailto:timdiscovers@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
+              onclick="copyEmailToClipboard()"
               class="icon solid fa-envelope"
             ></a>
           </li>
