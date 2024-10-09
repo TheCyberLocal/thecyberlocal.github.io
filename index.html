@@ -1,394 +1,464 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--
 	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-  <head>
-    <title>Timothy Macfarlane</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <script>
-      function copyEmailToClipboard() {
-        const email = "timdiscovers@gmail.com";
-        navigator.clipboard
-          .writeText(email)
-          .then(() => {
-            alert("Email copied to clipboard!");
-          })
-          .catch((err) => {
-            console.error("Failed to copy email: ", err);
-          });
-      }
-    </script>
-  </head>
-  <body class="is-preload">
-    <!-- Header -->
-    <section id="header">
-      <header>
-        <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-        <h1 id="logo">Timothy Macfarlane</h1>
-        <p>
-          I learn fast, love to study, type in COLEMAK, and value efficiency and
-          effectiveness.
-        </p>
-      </header>
-      <nav id="nav">
-        <ul>
-          <li><a href="#one" class="active">About Me</a></li>
-          <li><a href="#two">Things I Can Do</a></li>
-          <li><a href="#three">A Few Accomplishments</a></li>
-          <li><a href="#four">My Passion</a></li>
-        </ul>
-      </nav>
-      <footer>
-        <ul class="icons">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/tzm01"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="icon brands fa-linkedin"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/TheCyberLocal"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="icon brands fa-github"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onclick="copyEmailToClipboard()"
-              class="icon solid fa-envelope"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/document/d/1LT2Iz5d83Csb5v13ttEb-NLPQ6O8Cr8O64vQ4Fcqw0k"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="icon solid fa-briefcase"
-            ></a>
-          </li>
-        </ul>
-      </footer>
-    </section>
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Main -->
-      <div id="main">
-        <!-- One -->
-        <section id="one">
-          <div class="image main" data-position="center">
-            <img src="images/banner.jpg" alt="" />
-          </div>
-          <div class="container">
-            <header class="major">
-              <h2>About Me</h2>
-              <p>Only a challenge is worthwhile.</p>
-              <p>
-                I am a passionate and self-driven Software Development Engineer
-                with a strong background in computer science and mathematics.
-                Before attending App Academy, I worked as a Remote CAD
-                Specialist for Modular Furniture Group and a Stock Analytics
-                Software Developer on a private contract. Among my proudest
-                achievements was formulating a morphing algorithm to run market
-                simulations and detect the most profitable trading pattern.
-              </p>
-              <p>
-                My journey toward software engineering began at Modular
-                Furniture Group, where I was drawn to IT beyond my CAD
-                responsibilities. Fascinated by the ability of software to
-                automate IT processes, I transitioned from programming as a
-                hobby to pursuing my first software development contract. At App
-                Academy, I significantly improved my ability to write
-                maintainable and scalable code while building collaboration and
-                communication skills. I thrive on challenges and continuously
-                seek opportunities to learn and grow, with notable projects
-                including STRling, a modern interface to RegEx, and MyTube, a
-                full-stack application for organizing YouTube content.
-              </p>
-              <p>
-                Three technical skills I bring to software development are
-                proficiency in JavaScript and Python (including frameworks such
-                as React, Redux, Flask, and Express.js), experience with
-                database design and management (including SQLAlchemy,
-                PostgreSQL, and SQLite), and a strong understanding of DevOps
-                practices and tools (including Docker, AWS, and GitHub). My
-                non-technical skills include self-accountability, strong
-                diligence, critical thinking, and quick learning.
-              </p>
-              <p>
-                My proudest project is STRling, which showcases my creative
-                skills and how I learned to publish packages on PyPI and NPM. My
-                favorite part of the development process is designing and
-                implementing elegant and scalable architectures that ensure
-                long-term maintainability. Outside of tech, I enjoy
-                philosophical conversations, learning fun facts in any science
-                or mathematics, and engaging in high-paced, strategic
-                competitions. What sets me apart from other candidates is my
-                unique passion for continuous learning, which drives me to
-                pursue and overcome the most difficult challenges rather than
-                avoid them, along with my stoic stress management, which allows
-                me to perform my best under extreme pressure.
-              </p>
+    <head>
+        <title>Timothy Macfarlane</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <script>
+            function copyEmailToClipboard() {
+                const email = "timdiscovers@gmail.com";
+                navigator.clipboard
+                    .writeText(email)
+                    .then(() => {
+                        alert("Email copied to clipboard!");
+                    })
+                    .catch((err) => {
+                        console.error("Failed to copy email: ", err);
+                    });
+            }
+        </script>
+    </head>
+    <body class="is-preload">
+        <!-- Header -->
+        <section id="header">
+            <header>
+                <span class="image avatar"
+                    ><img src="images/avatar.jpg" alt=""
+                /></span>
+                <h1 id="logo">Timothy Macfarlane</h1>
+                <p>
+                    I learn fast, love to study, type in COLEMAK, and value
+                    efficiency and effectiveness.
+                </p>
             </header>
-          </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#one" class="active">About Me</a></li>
+                    <li><a href="#two">Things I Can Do</a></li>
+                    <li><a href="#three">A Few Accomplishments</a></li>
+                    <li><a href="#four">My Passion</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <ul class="icons">
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/tzm01"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="icon brands fa-linkedin"
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/TheCyberLocal"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="icon brands fa-github"
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            onclick="copyEmailToClipboard()"
+                            class="icon solid fa-envelope"
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://docs.google.com/document/d/1LT2Iz5d83Csb5v13ttEb-NLPQ6O8Cr8O64vQ4Fcqw0k"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="icon solid fa-briefcase"
+                        ></a>
+                    </li>
+                </ul>
+            </footer>
         </section>
 
-        <!-- Two -->
-        <section id="two">
-          <div class="container">
-            <h3>Things I Can Do</h3>
-            <p>
-              As a quick learner and adaptable professional, I excel in various
-              areas of software development and problem-solving.
-            </p>
-            <ul class="feature-icons">
-              <li class="icon solid fa-code">
-                Write efficient and effective code
-              </li>
-              <li class="icon solid fa-tools">Develop tools for developers</li>
-              <li class="icon solid fa-book">
-                Study and research new technologies
-              </li>
-              <li class="icon solid fa-coffee">Stay focused with coffee</li>
-              <li class="icon solid fa-bolt">
-                Implement fast and strategic solutions
-              </li>
-              <li class="icon solid fa-users">
-                Collaborate with diverse teams
-              </li>
-            </ul>
-          </div>
-        </section>
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Main -->
+            <div id="main">
+                <!-- One -->
+                <section id="one">
+                    <div class="image main" data-position="center">
+                        <img src="images/banner.jpg" alt="" />
+                    </div>
+                    <div class="container">
+                        <header class="major">
+                            <h2>About Me</h2>
+                            <p>Only a challenge is worthwhile.</p>
+                            <p>
+                                I am a passionate and self-driven Software
+                                Development Engineer with a strong background in
+                                computer science and mathematics. Before
+                                attending App Academy, I worked as a Remote CAD
+                                Specialist for Modular Furniture Group and a
+                                Stock Analytics Software Developer on a private
+                                contract. Among my proudest achievements was
+                                formulating a morphing algorithm to run market
+                                simulations and detect the most profitable
+                                trading pattern.
+                            </p>
+                            <p>
+                                My journey toward software engineering began at
+                                Modular Furniture Group, where I was drawn to IT
+                                beyond my CAD responsibilities. Fascinated by
+                                the ability of software to automate IT
+                                processes, I transitioned from programming as a
+                                hobby to pursuing my first software development
+                                contract. At App Academy, I significantly
+                                improved my ability to write maintainable and
+                                scalable code while building collaboration and
+                                communication skills. I thrive on challenges and
+                                continuously seek opportunities to learn and
+                                grow, with notable projects including STRling, a
+                                modern interface to RegEx, and MyTube, a
+                                full-stack application for organizing YouTube
+                                content.
+                            </p>
+                            <p>
+                                Three technical skills I bring to software
+                                development are proficiency in JavaScript and
+                                Python (including frameworks such as React,
+                                Redux, Flask, and Express.js), experience with
+                                database design and management (including
+                                SQLAlchemy, PostgreSQL, and SQLite), and a
+                                strong understanding of DevOps practices and
+                                tools (including Docker, AWS, and GitHub). My
+                                non-technical skills include
+                                self-accountability, strong diligence, critical
+                                thinking, and quick learning.
+                            </p>
+                            <p>
+                                My proudest project is STRling, which showcases
+                                my creative skills and how I learned to publish
+                                packages on PyPI and NPM. My favorite part of
+                                the development process is designing and
+                                implementing elegant and scalable architectures
+                                that ensure long-term maintainability. Outside
+                                of tech, I enjoy philosophical conversations,
+                                learning fun facts in any science or
+                                mathematics, and engaging in high-paced,
+                                strategic competitions. What sets me apart from
+                                other candidates is my unique passion for
+                                continuous learning, which drives me to pursue
+                                and overcome the most difficult challenges
+                                rather than avoid them, along with my stoic
+                                stress management, which allows me to perform my
+                                best under extreme pressure.
+                            </p>
+                        </header>
+                    </div>
+                </section>
 
-        <!-- Three -->
-        <section id="three">
-          <div class="container">
-            <h3>A Few Accomplishments</h3>
-            <p>
-              Throughout my career, I have achieved significant milestones that
-              demonstrate my capabilities and dedication.
-            </p>
-            <div class="features">
-              <article>
-                <a
-                  href="https://github.com/TheCyberLocal/MyTube"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="image"
-                  ><img
-                    src="images/mytube_logo.jpg"
-                    style="height: 200px; width: auto; margin: auto"
-                    alt=""
-                /></a>
-                <div class="inner">
-                  <h4>
-                    Creator of MyTube<br />
-                    - a YouTube for organizing notes
-                  </h4>
-                  <p>
-                    A full-stack application for organizing your favorite
-                    YouTube content with features like adding notes, alias
-                    names, personal descriptions, and video tags.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a
-                  href="https://github.com/TheCyberLocal/Airbnb-Clone"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="image"
-                  ><img
-                    src="images/airbnb_logo.png"
-                    style="height: 200px; width: auto; margin: auto"
-                    alt=""
-                /></a>
-                <div class="inner">
-                  <h4>
-                    Created an Airbnb clone<br />
-                    - the essence of Airbnb features
-                  </h4>
-                  <p>
-                    A full-stack application to sharpen and maintain my skills
-                    along with showcasing my abilities to plan, develop, deploy,
-                    and maintain an application.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a
-                  href="https://github.com/rileybona/sharesage"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="image"
-                  ><img
-                    src="images/sharesage_logo.jpg"
-                    style="height: 200px; width: auto; margin: auto"
-                    alt=""
-                /></a>
-                <div class="inner">
-                  <h4>
-                    Co-creator of ShareSage<br />
-                    - a modernized Splitwise clone
-                  </h4>
-                  <p>
-                    ShareSage is a refined platform designed to help users
-                    effortlessly keep track of their split bills with friends,
-                    family, and roommates.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a
-                  href="https://github.com/TheCyberLocal/STRling"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="image"
-                  ><img
-                    src="images/strling_logo.jpg"
-                    style="height: 200px; width: auto; margin: auto"
-                    alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Creator of STRling<br />- a modern interface to RegEx</h4>
-                  <p>
-                    Available on both PyPI and NPM, I am excited to announce
-                    this powerful concept is only the first of my tools for
-                    developers.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a
-                  href="https://github.com/TheCyberLocal/AskCodeium"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="image"
-                  ><img
-                    src="images/codeium_logo.jpg"
-                    style="height: 200px; width: auto; margin: auto"
-                    alt=""
-                /></a>
-                <div class="inner">
-                  <h4>
-                    Creator of AskCodeium<br />
-                    - a simple API for Codeium Live Chat
-                  </h4>
-                  <p>
-                    Available on both PyPI and NPM, I am excited to announce
-                    this simple, free, and open-source API is ready for you to
-                    implement today.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a
-                  href="https://medium.com/@timdiscovers"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="image"
-                  ><img
-                    style="width: 75%; margin: auto"
-                    src="images/medium_logo.jpg"
-                    style="height: 200px; width: auto; margin: auto"
-                    alt=""
-                /></a>
-                <div class="inner">
-                  <h4>
-                    A Contributor on Medium<br />
-                    - a platform for publishing articles
-                  </h4>
-                  <p>
-                    Author of many high-quality academic papers on specialized
-                    topics of my interests involving education and technology.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a
-                  href="https://www.amazon.com/stores/author/B0CGXX6S5F"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="image"
-                  ><img
-                    style="width: 50%; margin: auto"
-                    src="images/llac_logo.jpg"
-                    style="height: 200px; width: auto; margin: auto"
-                    alt=""
-                /></a>
-                <div class="inner">
-                  <h4>
-                    Author of the Learn Like a Champion<br />
-                    - a book series on how to study
-                  </h4>
-                  <p>
-                    Author of a children's book series on learning to learn,
-                    showcasing my passion for self-improvement and ability to
-                    explain complex ideas in simple terms.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
+                <!-- Two -->
+                <section id="two">
+                    <div class="container">
+                        <h3>Things I Can Do</h3>
+                        <p>
+                            As a quick learner and adaptable professional, I
+                            excel in various areas of software development and
+                            problem-solving.
+                        </p>
+                        <ul class="feature-icons">
+                            <li class="icon solid fa-code">
+                                Write efficient and effective code
+                            </li>
+                            <li class="icon solid fa-tools">
+                                Develop tools for developers
+                            </li>
+                            <li class="icon solid fa-book">
+                                Study and research new technologies
+                            </li>
+                            <li class="icon solid fa-coffee">
+                                Stay focused with coffee
+                            </li>
+                            <li class="icon solid fa-bolt">
+                                Implement fast and strategic solutions
+                            </li>
+                            <li class="icon solid fa-users">
+                                Collaborate with diverse teams
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-        <!-- Four -->
-        <section id="four">
-          <div class="container">
-            <h3>My Passion</h3>
-            <p>
-              When I say I have a passion for computer science and continuous
-              learning, I mean that if I was not employed as a software engineer
-              I would still do it as a hobby. I find immense satisfaction in my
-              work, as it allows me to live my ikigai—pursuing mentally
-              stimulating problems that challenge my skills and push me to grow.
-            </p>
-            <p>
-              More than user product development, I have a keen interest in
-              developing tools for other developers. I find an even greater
-              sense of accomplishment when I create a tool because I know it
-              will be used in the development of many user products to come.
-            </p>
-            <p>Regarding my quote on challenges, allow me to explain:</p>
-            <ul>
-              <li>
-                When I take on a task that is not challenging, there is a likely
-                chance of success with no sense of accomplishment and a small
-                chance of failure with internal embarrassment. This means a
-                likely neutral feeling from success and potential negative
-                feeling from failure.
-              </li>
-              <li>
-                However, when I face a challenge, I have a less likely chance of
-                success but with a sense of accomplishment and a more likely
-                chance of failure but the shame diminishes. This means a
-                potential positive feeling from success and a more likely but
-                less shameful failure.
-              </li>
-            </ul>
-            <p>
-              Only the challenge has potential for greatness, and this is why I
-              am and will forever be a lifelong learner striving to overcome the
-              next challenge with unwavering determination so I can once again
-              earn the sensation of another victory.
-            </p>
-          </div>
-        </section>
+                <!-- Three -->
+                <section id="three">
+                    <div class="container">
+                        <h3>A Few Accomplishments</h3>
+                        <p>
+                            Throughout my career, I have achieved significant
+                            milestones that demonstrate my capabilities and
+                            dedication.
+                        </p>
+                        <div class="features">
+                            <article>
+                                <a
+                                    href="https://github.com/TheCyberLocal/MyTube"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="image"
+                                    ><img
+                                        src="images/mytube_logo.jpg"
+                                        style="
+                                            height: 200px;
+                                            width: auto;
+                                            margin: auto;
+                                        "
+                                        alt=""
+                                /></a>
+                                <div class="inner">
+                                    <h4>
+                                        Creator of MyTube<br />
+                                        - a YouTube for organizing notes
+                                    </h4>
+                                    <p>
+                                        A full-stack application for organizing
+                                        your favorite YouTube content with
+                                        features like adding notes, alias names,
+                                        personal descriptions, and video tags.
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <a
+                                    href="https://github.com/TheCyberLocal/Airbnb-Clone"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="image"
+                                    ><img
+                                        src="images/airbnb_logo.png"
+                                        style="
+                                            height: 200px;
+                                            width: auto;
+                                            margin: auto;
+                                        "
+                                        alt=""
+                                /></a>
+                                <div class="inner">
+                                    <h4>
+                                        Created an Airbnb clone<br />
+                                        - the essence of Airbnb features
+                                    </h4>
+                                    <p>
+                                        A full-stack application to sharpen and
+                                        maintain my skills along with showcasing
+                                        my abilities to plan, develop, deploy,
+                                        and maintain an application.
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <a
+                                    href="https://github.com/rileybona/sharesage"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="image"
+                                    ><img
+                                        src="images/sharesage_logo.jpg"
+                                        style="
+                                            height: 200px;
+                                            width: auto;
+                                            margin: auto;
+                                        "
+                                        alt=""
+                                /></a>
+                                <div class="inner">
+                                    <h4>
+                                        Co-creator of ShareSage<br />
+                                        - a modernized Splitwise clone
+                                    </h4>
+                                    <p>
+                                        ShareSage is a refined platform designed
+                                        to help users effortlessly keep track of
+                                        their split bills with friends, family,
+                                        and roommates.
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <a
+                                    href="https://github.com/TheCyberLocal/STRling"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="image"
+                                    ><img
+                                        src="images/strling_logo.jpg"
+                                        style="
+                                            height: 200px;
+                                            width: auto;
+                                            margin: auto;
+                                        "
+                                        alt=""
+                                /></a>
+                                <div class="inner">
+                                    <h4>
+                                        Creator of STRling<br />- a modern
+                                        interface to RegEx
+                                    </h4>
+                                    <p>
+                                        Available on both PyPI and NPM, I am
+                                        excited to announce this powerful
+                                        concept is only the first of my tools
+                                        for developers.
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <a
+                                    href="https://github.com/TheCyberLocal/AskCodeium"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="image"
+                                    ><img
+                                        src="images/codeium_logo.jpg"
+                                        style="
+                                            height: 200px;
+                                            width: auto;
+                                            margin: auto;
+                                        "
+                                        alt=""
+                                /></a>
+                                <div class="inner">
+                                    <h4>
+                                        Creator of AskCodeium<br />
+                                        - a simple API for Codeium Live Chat
+                                    </h4>
+                                    <p>
+                                        Available on both PyPI and NPM, I am
+                                        excited to announce this simple, free,
+                                        and open-source API is ready for you to
+                                        implement today.
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <a
+                                    href="https://medium.com/@timdiscovers"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="image"
+                                    ><img
+                                        style="width: 75%; margin: auto"
+                                        src="images/medium_logo.jpg"
+                                        style="
+                                            height: 200px;
+                                            width: auto;
+                                            margin: auto;
+                                        "
+                                        alt=""
+                                /></a>
+                                <div class="inner">
+                                    <h4>
+                                        A Contributor on Medium<br />
+                                        - a platform for publishing articles
+                                    </h4>
+                                    <p>
+                                        Author of many high-quality academic
+                                        papers on specialized topics of my
+                                        interests involving education and
+                                        technology.
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <a
+                                    href="https://www.amazon.com/stores/author/B0CGXX6S5F"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="image"
+                                    ><img
+                                        style="width: 50%; margin: auto"
+                                        src="images/llac_logo.jpg"
+                                        style="
+                                            height: 200px;
+                                            width: auto;
+                                            margin: auto;
+                                        "
+                                        alt=""
+                                /></a>
+                                <div class="inner">
+                                    <h4>
+                                        Author of the Learn Like a Champion<br />
+                                        - a book series on how to study
+                                    </h4>
+                                    <p>
+                                        Author of a children's book series on
+                                        learning to learn, showcasing my passion
+                                        for self-improvement and ability to
+                                        explain complex ideas in simple terms.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
 
-        <!-- <section id="four">
+                <!-- Four -->
+                <section id="four">
+                    <div class="container">
+                        <h3>My Passion</h3>
+                        <p>
+                            When I say I have a passion for computer science and
+                            continuous learning, I mean that if I was not
+                            employed as a software engineer I would still do it
+                            as a hobby. I find immense satisfaction in my work,
+                            as it allows me to live my ikigai—pursuing mentally
+                            stimulating problems that challenge my skills and
+                            push me to grow.
+                        </p>
+                        <p>
+                            More than user product development, I have a keen
+                            interest in developing tools for other developers. I
+                            find an even greater sense of accomplishment when I
+                            create a tool because I know it will be used in the
+                            development of many user products to come.
+                        </p>
+                        <p>
+                            Regarding my quote on challenges, allow me to
+                            explain:
+                        </p>
+                        <ul>
+                            <li>
+                                When I take on a task that is not challenging,
+                                there is a likely chance of success with no
+                                sense of accomplishment and a small chance of
+                                failure with internal embarrassment. This means
+                                a likely neutral feeling from success and
+                                potential negative feeling from failure.
+                            </li>
+                            <li>
+                                However, when I face a challenge, I have a less
+                                likely chance of success but with a sense of
+                                accomplishment and a more likely chance of
+                                failure but the shame diminishes. This means a
+                                potential positive feeling from success and a
+                                more likely but less shameful failure.
+                            </li>
+                        </ul>
+                        <p>
+                            Only the challenge has potential for greatness, and
+                            this is why I am and will forever be a lifelong
+                            learner striving to overcome the next challenge with
+                            unwavering determination so I can once again earn
+                            the sensation of another victory.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- <section id="four">
 								<div class="container">
 									<h3>Contact Me</h3>
 									<p>Feel free to reach out for collaborations, questions, or any professional inquiries. I'm always open to new opportunities and connections.</p>
@@ -409,8 +479,8 @@
 								</div>
 							</section> -->
 
-        <!-- Five -->
-        <!--
+                <!-- Five -->
+                <!--
 							<section id="five">
 								<div class="container">
 									<h3>Elements</h3>
@@ -738,26 +808,29 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 								</div>
 							</section>
-						--></div>
+						-->
+            </div>
 
-      <!-- Footer -->
-      <section id="footer">
-        <div class="container">
-          <ul class="copyright">
-            <li>&copy; Timothy Macfarlane. All rights reserved.</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-          </ul>
+            <!-- Footer -->
+            <section id="footer">
+                <div class="container">
+                    <ul class="copyright">
+                        <li>&copy; Timothy Macfarlane. All rights reserved.</li>
+                        <li>
+                            Design: <a href="http://html5up.net">HTML5 UP</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-      </section>
-    </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
